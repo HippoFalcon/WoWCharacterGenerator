@@ -8,7 +8,7 @@
       "Alliance": ["Dwarf", "Gnome", "Human", "Night Elf", "Dranei", "Worgen", "Pandaren"],
       "Horde": ["Orc", "Troll", "Tauren", "Undead", "Blood Elf", "Goblin", "Pandaren"]
     },
-    classs: {
+    class: {
       "Dranei": ["Death Knight", "Hunter", "Mage", "Paladin", "Priest", "Shaman", "Warrior", "Monk"],
       "Dwarf": ["Death Knight", "Hunter", "Mage", "Paladin", "Priest", "Rogue", "Shaman", "Warlock", "Warrior", "Monk"],
       "Gnome": ["Death Knight", "Hunter", "Mage", "Priest", "Rogue", "Warlock", "Warrior", "Monk"],
@@ -43,7 +43,7 @@
       faction: "",
       race: "",
       sex: "",
-      classs: "",
+      class: "",
       spec: "",
       prof: "",
       name: ""
@@ -51,7 +51,7 @@
     c.faction = gId("Faction").value === "Random" ? _Select(character.faction) : gId("Faction").value;
     c.race = _Select(character.race, c.faction);
     c.sex = _Select(["Male", "Female"]);
-    c.classs = _Select(character.class, c.race);
+    c.class = _Select(character.class, c.race);
     c.spec = _Select(character.spec, c.class);
     c.prof = _Select(["Mining & Engineering", "Mining & Jewelcrafting", "Mining & Blacksmithing", "Herbalism & Inscription", "Herbalism & Alchemy", "Skinning & Leatherworking", "Tailoring & Enchanting", "Mining and Herbalism"]);
     c.name = _Select(["Amraldin", "Kasdum", "Zazel", "Alphar", "Kobelph", "Fingoneth", "Lothelye", "Zopha", "Achiel", "Dallach", "Undan", "Bobafeet", "Sielah", "Dattboii", "Gavriel", "Hielat", "Gavraf", "Azrael", "Jarkin", "Galenwe", "Alsemayo", "Peniyah", "Lorfinar", "Hielik", "Pewpewcachoo", "Ramdonh", "Kaolm", "Jehanicus", "Geesus", "Kailorenn", "Doothidoo", "Raqiel", "Chanukka", "Jaims", "Gajdun", "Haik", "Moothi", "Wappers", "Punkins", "Geschenken", "Acoontin", "Gadorfy", "Rawrzien", "Tanntann", "Makm", "Nerde", "Gobbles", "Paha", "Nelophile", "Lenwe", "Felicus", "Illi-something", "something-adin", "Shaavingell", "Axxbom", "Kolomon", "Indil", "Jindjind", "Milemmir", "Giffn","Kneppicus","Werg","Quanddo","Cardtopian","Amimmim","Vanillor","Meeseeks","Mooana","Mortien","Maulz","Hortler","Kisto","Phistor","Mandorp","Miskoo","Lloqua","Heis","Poporazzi","Pixulz","Rauz","Dimen","Whytboi","Smoak"]);
@@ -60,6 +60,6 @@
       var t = param ? obj[param] : obj;
       return t[Math.floor(Math.random() * t.length)];
     }
-    gId("Output").innerHTML = "Your character is part of the " + c.faction + " and is a " + c.sex + ", " + c.race + ", " + c.spec + " " + c.classs + " with " + c.prof + " that is named " + c.name;
+    gId("Output").innerHTML = "Your character is part of the " + c.faction + " and is a " + c.sex + ", " + c.race + ", " + c.spec + " " + c.class + " with " + c.prof + " that is named " + c.name;
   };
 })();
