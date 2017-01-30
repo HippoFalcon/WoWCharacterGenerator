@@ -1,0 +1,32 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script language="javascript" type="text/javascript" src="p5.min.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <!--<script language="javascript" src="libraries/p5.dom.js"></script>-->
+  <!--<script language="javascript" src="libraries/p5.sound.js"></script>-->
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+  <style> body {padding: 0; margin: 0;} </style>
+</head>
+
+<body>
+  <center>
+  <p>World of Warcraft Random Character Selector.</p>
+  <p>Select your faction, then press submit to generate your random character.</p>
+  <p>Code orginally created by <a href="http://jsfiddle.net/user/aconyteds/fiddles/">aconyteds</a>! Check them out!</p>
+  <div>
+    <select id="Faction">
+      <option value="Random">Random</option>
+      <option value="Alliance">Alliance</option>
+      <option value="Horde">Horde</option>
+    </select>
+    <button id="Submit">Submit</button>
+  </div>
+  <p>---------------------------------------------------</p>
+  <p id="Output"></p>
+  <p>---------------------------------------------------</p>
+</center>
+</body>
+</html>
