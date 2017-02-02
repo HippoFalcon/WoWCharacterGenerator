@@ -19,7 +19,7 @@ function draw(){
   fill( 139,28,17);
   stroke(25,25,25);
    ellipse( random( windowWidth , windowHeight ) , random( windowHeight , 0) ,
-   random( 1 , 200),random( 1 , 200));
+   random( 1 , 200));
   //WHITE L
   fill( 139,28,17);
   stroke(25,25,25);
