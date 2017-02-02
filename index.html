@@ -82,7 +82,7 @@
     };
     c.faction = gId("Faction").value === "Random Faction" ? _Select(character.faction) : gId("Faction").value;
     c.race = _Select(character.race, c.faction);
-    c.sex = gId("Sex").value === "Random Gender" ? _Select("Male","Female") : gId("Sex").value;
+    c.sex = gId("Sex").value === "Random Gender" ? _Select("Male"||"Female") : gId("Sex").value;
     c.class = _Select(character.class, c.race);
     c.spec = _Select(character.spec, c.class);
     c.prof = _Select(["Mining & Engineering", "Mining & Jewelcrafting", "Mining & Blacksmithing", "Herbalism & Inscription", "Herbalism & Alchemy", "Skinning & Leatherworking", "Tailoring & Enchanting", "Mining and Herbalism"]);
