@@ -23,7 +23,7 @@
       <option value="Horde">Horde</option>
     </select>
     <select id="Sex">
-      <option value="Random">Random</option>
+      <option value="Rando">Random</option>
       <option value="Male">Male</option>
       <option value="Female">Female</option>
     </select>
@@ -82,7 +82,7 @@
     };
     c.faction = gId("Faction").value === "Random" ? _Select(character.faction) : gId("Faction").value;
     c.race = _Select(character.race, c.faction);
-    c.sex = gId("Sex").value === "Random" ? _Select(character.sex) : gId("Sex").value;
+    c.sex = gId("Sex").value === "Rando" ? _Select(character.sex) : gId("Sex").value;
     c.class = _Select(character.class, c.race);
     c.spec = _Select(character.spec, c.class);
     c.prof = _Select(["Mining & Engineering", "Mining & Jewelcrafting", "Mining & Blacksmithing", "Herbalism & Inscription", "Herbalism & Alchemy", "Skinning & Leatherworking", "Tailoring & Enchanting", "Mining and Herbalism"]);
