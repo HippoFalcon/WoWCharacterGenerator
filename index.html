@@ -80,7 +80,7 @@
       prof: "",
       name: ""
     };
-    var q = random("Female","Male");
+    var q = _Select("Female","Male");
     
     c.faction = gId("Faction").value === "Random Faction" ? _Select(character.faction) : gId("Faction").value;
     c.race = _Select(character.race, c.faction);
